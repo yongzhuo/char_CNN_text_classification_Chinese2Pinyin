@@ -10,22 +10,31 @@
 ## predition ##
 python pred_inupt.py
 
+
+
 ## Running ##
 need构造 训练数据，验证数据， 标签数据
 python training.py
 
+
+
+
 ## Models ##
 charCNN.py : 9-layer large convolutional neural network based on raw character.
 
-## Dataset ##
-If dataset is not found under datasets_dir, it will be downloaded automatically. 
-The feeding method is used now to get data into TF model.
-
--- ag: [AG](http://www.di.unipi.it/~gulli/AG_corpus_of_news_articles.html) is a collection of more than 1 million 
-news articles. News articles have been gathered from more than 2000 news sources by ComeToMyHead in more than 1 year of 
-activity. ComeToMyHead is an academic news search engine which has been running since July, 2004.
-
-
+## 数据与步骤 ##
+自己构造，
+a.首先xpinyinUtil.py，  将    
+                             我想看火影   VIDEO    
+                      转化为    
+                             WEATHER	zai jiao zhou de tian qi
+                      拼音
+                      
+b.然后suffle.py打乱  训练数据和验证数据 120000:9600
+c.配好config的地址和参数（主要就是训练数据和验证数据、标签数据） 
+                      标签数据格式  VIDEO 1
+                                   MUSIC 2
+d.接着就是training.py   训练800step, 准确率95、96%这样,  验证准确率85.9%，还不错，不过没有LSTM那么好就是了
 ## 正确的是1e-4
 试了试其他的epsilon=[0.01, 0.001, 1e-5]，学习率为默认0.001。
 结果是：前两个太大（？）学习不到什么loss在1.3震荡；
