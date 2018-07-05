@@ -11,13 +11,27 @@
 python pred_inupt.py
 
 
+                                                                Connected to pydev debugger (build 171.3780.115)
+                                                                正在载入数据、模型...
+                                                                载入模型成功1...
+                                                                载入模型成功2...
+                                                                input_Chinese:
+                                                                我想看斗破
+                                                                我想看斗破 	 VIDEO
+                                                                耗时：  1.718341588973999
+                                                                input_Chinese:
+                                                                我想唱歌
+                                                                我想唱歌 	 APP
+                                                                耗时：  0.004961252212524414
+                                                                input_Chinese:
+                                                                明天天气怎么样
+                                                                明天天气怎么样 	 WEATHER
+                                                                耗时：  0.0034716129302978516
+                                                                input_Chinese:
 
 ## Running ##
 need构造 训练数据，验证数据， 标签数据
 python training.py
-
-
-
 
 ## Models ##
 charCNN.py : 9-layer large convolutional neural network based on raw character.
@@ -25,9 +39,9 @@ charCNN.py : 9-layer large convolutional neural network based on raw character.
 ## 数据与步骤 ##
 自己构造，
 a.首先xpinyinUtil.py，  将    
-                             我想看火影   VIDEO    
+                             我想看火影     （这里是'\t'）       VIDEO    
                       转化为    
-                             WEATHER	zai jiao zhou de tian qi
+                             VIDEO	       （这里是'\t'）        zai jiao zhou de tian qi
                       拼音
                       
 b.然后suffle.py打乱  训练数据和验证数据 120000:9600
