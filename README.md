@@ -4,10 +4,14 @@
 
 ## Reqirement ##
 - Python 3.5.5
-- Numpy 1.13.1
+- Numpy [1.13.1]
 - TensorFlow 1.2.1-1.8
 
+## predition ##
+python pred_inupt.py
+
 ## Running ##
+needæ„é€  è®­ç»ƒæ•°æ®ï¼ŒéªŒè¯æ•°æ®ï¼Œ æ ‡ç­¾æ•°æ®
 python training.py
 
 ## Models ##
@@ -22,15 +26,15 @@ news articles. News articles have been gathered from more than 2000 news sources
 activity. ComeToMyHead is an academic news search engine which has been running since July, 2004.
 
 
-## ÕıÈ·µÄÊÇ1e-4
-ÊÔÁËÊÔÆäËûµÄepsilon=[0.01, 0.001, 1e-5]£¬Ñ§Ï°ÂÊÎªÄ¬ÈÏ0.001¡£
-½á¹ûÊÇ£ºÇ°Á½¸öÌ«´ó£¨£¿£©Ñ§Ï°²»µ½Ê²Ã´lossÔÚ1.3Õğµ´£»
-1e-5µÄ½á¹ûºÍÄ¬ÈÏµÄ1e-8Ã»Çø±ğ£¬Í¬ÑùÔÚstep=4000×óÓÒ±ÀÁË£¨È»ºó»ØÉı£©¡£ Çóµ÷²Î¾­Ñé£¡
-¾Ù±¨»Ø¸´
+## æ­£ç¡®çš„æ˜¯1e-4
+è¯•äº†è¯•å…¶ä»–çš„epsilon=[0.01, 0.001, 1e-5]ï¼Œå­¦ä¹ ç‡ä¸ºé»˜è®¤0.001ã€‚
+ç»“æœæ˜¯ï¼šå‰ä¸¤ä¸ªå¤ªå¤§ï¼ˆï¼Ÿï¼‰å­¦ä¹ ä¸åˆ°ä»€ä¹ˆlossåœ¨1.3éœ‡è¡ï¼›
+1e-5çš„ç»“æœå’Œé»˜è®¤çš„1e-8æ²¡åŒºåˆ«ï¼ŒåŒæ ·åœ¨step=4000å·¦å³å´©äº†ï¼ˆç„¶åå›å‡ï¼‰ã€‚ æ±‚è°ƒå‚ç»éªŒï¼
+ä¸¾æŠ¥å›å¤
 
 
-##  ÄúºÃ£¬Ê×ÏÈĞ»Ğ»ÄúµÄ·ÖÏí¡£ Q: ÎÒÔÚÑµÁ·3k²½×óÓÒ£¨acc=0.8, loss=0.2×óÓÒ£©Ê±£¬accÖè½µ£¨ÖÁ0.2£©lossÍ»Ôö£¨ÖÁ10000+£©£¬
-È»ºóÓÖÂıÂı»Øµ½0.7£¨acc£©×óÓÒ¡£ÇëÎÊÄúÓĞ³öÏÖÕâÖÖÇé¿öÂğ£¿Ô­ÒòÄúÇå³şÂğ£¿
-PS: githubÉÏÓĞ½âÊÍËµÊÇAdamµÄÎÊÌâ£¨https://stackoverflow.com/questions/42327543/adam-optimizer-goes-haywire-after-200k-batches-training-loss-grows/42420014#42420014£©£¿
+##  æ‚¨å¥½ï¼Œé¦–å…ˆè°¢è°¢æ‚¨çš„åˆ†äº«ã€‚ Q: æˆ‘åœ¨è®­ç»ƒ3kæ­¥å·¦å³ï¼ˆacc=0.8, loss=0.2å·¦å³ï¼‰æ—¶ï¼Œaccéª¤é™ï¼ˆè‡³0.2ï¼‰lossçªå¢ï¼ˆè‡³10000+ï¼‰ï¼Œ
+ç„¶ååˆæ…¢æ…¢å›åˆ°0.7ï¼ˆaccï¼‰å·¦å³ã€‚è¯·é—®æ‚¨æœ‰å‡ºç°è¿™ç§æƒ…å†µå—ï¼ŸåŸå› æ‚¨æ¸…æ¥šå—ï¼Ÿ
+PS: githubä¸Šæœ‰è§£é‡Šè¯´æ˜¯Adamçš„é—®é¢˜ï¼ˆhttps://stackoverflow.com/questions/42327543/adam-optimizer-goes-haywire-after-200k-batches-training-loss-grows/42420014#42420014ï¼‰ï¼Ÿ
 
-ÎÊÌâ£ºrestoreµÄÊ±ºò·ÑÁËºÜ´óÁ¦Æø
+é—®é¢˜ï¼šrestoreçš„æ—¶å€™è´¹äº†å¾ˆå¤§åŠ›æ°”
