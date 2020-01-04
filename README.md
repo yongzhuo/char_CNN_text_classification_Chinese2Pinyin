@@ -2,6 +2,10 @@
 
 ## [Here is an article explaining this code](http://blog.csdn.net/Irving_zhang/article/details/75634108) ##
 
+## 代码来源
+   代码绝大部分来源于[lc222/char-cnn-text-classification-tensorflow](https://github.com/lc222/char-cnn-text-classification-tensorflow)，
+   仅作中文转pingyin处理, 添加predict
+
 ## Reqirement ##
 - Python 3.5.5
 - Numpy [1.13.1]
